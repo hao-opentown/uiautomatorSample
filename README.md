@@ -1,0 +1,2 @@
+# uiautomatorSample
+uiautomator sample
