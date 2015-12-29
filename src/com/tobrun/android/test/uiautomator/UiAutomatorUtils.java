@@ -12,10 +12,17 @@ public class UiAutomatorUtils {
 		return new UiObject(new UiSelector().text(text).className(className));
 	}
 
+	private final static UiObject findViewByDesc(final String desc, final String className) {
+		return new UiObject(new UiSelector().description(desc).className(className));
+	}
+
 	public static UiObject findTextViewByText(final String text) {
 		return findViewByText(text, android.widget.TextView.class.getName());
 	}
 
+	public static UiObject findTextViewByDesc(final String desc) {
+		return findViewByDesc(desc, android.widget.TextView.class.getName());
+	}
 	public static UiObject findButtonByText(final String text) {
 		return findViewByText(text, android.widget.Button.class.getName());
 	}

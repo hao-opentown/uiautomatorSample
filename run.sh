@@ -7,4 +7,5 @@ ant build
 
 #deploy
 adb push bin/UiAutomatorExample.jar /data/local/tmp
-adb shell uiautomator runtest UiAutomatorExample.jar -c com.tobrun.android.test.uiautomator.ApiDemosTest
+#adb shell uiautomator runtest UiAutomatorExample.jar -c com.tobrun.android.test.uiautomator.ApiDemosTest
+adb shell uiautomator runtest UiAutomatorExample.jar -c com.tobrun.android.test.uiautomator.CtextOrgPromote
